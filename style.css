@@ -1,0 +1,178 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&family=Josefin+Slab:wght@400;600;700&display=swap');
+
+* 
+{
+  box-sizing: border-box;
+}
+
+body
+{
+	line-height: 1.5;
+	font-size: 0.75rem;
+}
+
+.nav
+{
+	display: grid;
+}
+
+.nav a
+{
+	padding: 1rem;
+	font-family: "Josefin Sans", sans-serif;
+	text-decoration: none;
+	color: #F26622;
+}
+
+.nav a:hover
+{
+	color: #1E1E1E;
+}
+
+.masthead
+{
+	background-image: url('../img/banner.jpg');
+	background-color: gray;
+  	height: 300px;
+  	max-width: 100%;
+  	background-position: center center;
+  	background-repeat: no-repeat;
+  	background-size: cover;
+}
+
+.masthead h1
+{
+	padding: 2rem;
+	font-family: "Josefin Slab", serif;
+	color: black;
+}
+
+.main-content
+{
+	padding: 2rem;
+}
+
+button
+{
+	display: inline-block;
+	width: 100px;
+	height: 50px;
+	font-size: 0.75rem;
+	font-family: "Josefin Sans", sans-serif;
+	background-color: #F26622; 
+	border: none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+}
+
+#active-button
+{
+	color: #1E1E1E;
+}
+
+.main-content h2
+{
+	font-family: "Josefin Slab", serif;
+	font-size: 0.75rem;
+	margin-top: 50px;
+}
+
+.img1
+{
+	width: 100%;
+}
+
+.main-content p
+{
+	font-family: "Josefin Sans", sans-serif;
+}
+
+footer 
+{
+	background-color: #F2D02E;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+footer h6
+{
+	font-size: 0.75rem;
+	font-family: "Josefin Sans", sans-serif;
+}
+
+footer a
+{
+	text-decoration: none;
+	color: #1E1E1E;
+}
+
+footer a:hover
+{
+	color: #F26622;
+}
+
+footer i
+{
+	color: #1E1E1E;
+}
+
+@media screen and (min-width: 30rem) 
+{
+	body
+	{
+		padding: 2rem;
+		line-height: 1.5;
+		font-size: 1rem;
+	}
+	
+	.nav
+	{
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		max-width: 60rem;
+		margin: 0 auto;
+	}
+
+	.masthead
+	{
+		background-image: url('../img/banner.jpg');
+		background-color: gray;
+	  	height: 500px;
+	  	max-width: 100%;
+	  	background-position: center center;
+	  	background-repeat: no-repeat;
+	  	background-size:cover;
+		-webkit-background-size:cover;
+		-moz-background-size:cover;
+		-o-background-size:cover;
+	}
+
+	.img1
+	{
+		width: 25%;
+		float: left;
+	}
+
+	.main-content
+	{
+		max-width: 60rem;
+		margin: 0 auto;
+	}
+
+	.main-content p
+	{
+		float: right;
+		width: 65%;
+	}
+
+
+	footer
+	{
+		clear: both;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		justify-items: center;
+	}
+
+}
