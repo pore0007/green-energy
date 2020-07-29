@@ -23,6 +23,7 @@ body
 .nav
 {
 	display: grid;
+	padding: 2rem;
 }
 
 .nav a
